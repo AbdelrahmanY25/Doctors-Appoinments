@@ -1,0 +1,40 @@
+﻿.dName {
+    font-weight: bold;
+    font-size: 40px;
+    span {
+             color: #0094ff;
+         }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    label {
+              margin-bottom: 8px;
+          }    
+}
+.form input {
+    padding: 8px 12px;    
+    margin-bottom: 18px;
+    outline: none;
+    width: 50%;
+    border: 1px solid #333;
+    border-radius: 8px
+}
+.sub {
+    text-align: center;
+    margin-left: 50%;
+    padding: 8px 20px;
+    background-color: #258cfb;;
+    outline: none;
+    border: none;
+    color: #fff;
+    transform: translateX(-50%);
+    font-size: 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}

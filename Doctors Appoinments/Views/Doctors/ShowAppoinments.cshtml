@@ -1,0 +1,20 @@
+﻿<table class="table">
+    <thead>
+        <tr style="text-align: center">
+            <th scope="col">Patient Name</th>
+            <th scope="col">Appoinment Date</th>
+            <th scope="col">Appoinment Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appoint in Model)
+        {
+            <tr style="text-align: center">
+                <td>@appoint.PatientName</td>
+                <td style="background-color: #258cfb; color: #fff;">@appoint.AppoinmentDate</td>
+                <td>@appoint.AppoinmentTime</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

@@ -1,0 +1,19 @@
+﻿.all {
+    background-color: #0094ff;
+    color: #eee;
+    padding: 12px 2px;
+    width: fit-content;
+    border-radius: 15px;
+    box-shadow: 0px 2px 3px 2px rgba(21, 43, 134, 0.2);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.all:hover {
+    background-color: #fff;
+    color: #258cfb;
+    transform: scale(1.03);
+}
+.all p {
+    margin: 0 8px 10px;
+}

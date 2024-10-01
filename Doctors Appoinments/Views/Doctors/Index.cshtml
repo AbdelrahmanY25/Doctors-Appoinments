@@ -1,0 +1,28 @@
+﻿<div class="articles" id="articles">
+    <div class="containers">
+        @{
+            foreach (var item in Model)
+            {
+                    <div class="card">
+                        <div class="image">
+                            <img src="~/images/@item.Img" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>@item.Name</h3>
+                            <p>@item.Specialization</p>
+                        </div>
+                        <div class="btn"><a href="/doctors/MakeAppoint/?id=@item.Id">Book Appoinment</a></div>
+                    </div>
+            }
+        }
+    </div>
+</div>
+
+<a class="allappoint" href="/doctors/ShowAppoinments">Show All Appoinments</a>
+
+<script>
+    let div = document.querySelector(".allappoint");
+    div.onclick = () => {
+        location.href()
+    }
+</script>

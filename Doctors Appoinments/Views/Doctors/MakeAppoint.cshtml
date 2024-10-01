@@ -1,0 +1,35 @@
+﻿<h1 class="dName">Complete Appointment With <span>@Model.Name</span></h1>
+
+<form class="form" method="post" action="/Doctors/BookAppointment">
+    <label id="name" for="patname">Patient Name:</label>
+    <input type="text" name="PatientName" id="patname" value="" required />
+
+    <label id="date" for="appdate">Appointment Date:</label>
+    <input type="date" name="AppoinmentDate" id="appdate" value="" required />
+
+    <label id="time" for="apptime">Appointment Time:</label>
+    <input type="time" name="AppoinmentTime" id="apptime" value="" required />
+
+    <button type="submit" class="sub" onclick="showValues()">Book Appointment</button>
+</form>
+
+<script>
+    let nameInp = document.querySelector(".form input[type='text']");
+    let dateInp = document.querySelector(".form input[type='date']");
+    let timeInp = document.querySelector(".form input[type='time']");
+    let btn = document.querySelector(".form .sub");
+    let inputs = document.querySelectorAll(".form input");
+
+    function showValues() {
+        const name = nameInp.value;
+        const date = dateInp.value;
+        const time = timeInp.value;
+        
+        if(name && date && time)
+        {
+            console.log(`Patient Name: ${name}  Appoinment Date: ${date}  Appoinment Time: ${time}`);
+        } else {
+            alert("Please Fill All Data");
+        }
+    }    
+</script>
